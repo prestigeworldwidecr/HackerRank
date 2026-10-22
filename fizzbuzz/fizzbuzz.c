@@ -25,7 +25,37 @@ int parse_int(char*);
 
 void fizzBuzz(int n) 
 {
-    printf("%s", "test");
+    void fizzBuzz(int n) 
+{
+    // printf("%d", n);
+    for (int i = 1; i <= n; i++)
+    {
+        if ((i % 3 == 0) && (i % 5 == 0))
+        {
+            printf("%s", "FizzBuzz\n");
+        }
+        
+        else
+        {
+            if (i % 3 == 0)
+            {
+                printf("%s", "Fizz\n");
+            }
+            
+            else if (i % 5 == 0)
+            {
+                printf("%s", "Buzz\n");
+            }
+            
+            else
+            {
+                printf("%d%s", i, "\n");
+            }
+            
+        }
+        
+    }
+}
 }
 
 int main()
